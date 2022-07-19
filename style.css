@@ -1,0 +1,141 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Section one Start */
+.section1{
+    margin: 50px 130px 8.75rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    
+    padding-left: 6.625rem;
+    padding-right: 5rem;
+}
+.text-part{
+    width: 50%;
+
+}
+.img-part{
+    width: 50%;
+}
+.img-part img{
+    width: 100%;
+}
+.text-part h2 {
+    margin-bottom: 1.25rem;
+    font-size: 4.375rem;
+    line-height: 5rem;
+    color: white;
+}
+.text-part p{
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 1.875rem;
+}
+button{
+    background-color: #DD0000;
+    font-size: 1.25rem;
+    font-weight: 400;
+    border: none;
+    padding: 1rem 1.563rem;
+    border-radius: .5rem;
+    color: white;
+    margin-bottom: 6.938rem;
+}
+/* Section one End */
+/* Mobile */
+@media only screen and (max-width: 688px) {
+    .section1{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .text-part{
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-part{
+        width: 70%;
+    }
+    .text-part h2 {
+        padding: 28px 53px 8px 53px;
+        text-align: center;
+        font-size: 22px;
+        line-height: 2.063rem;
+        color: white;
+    }
+    .text-part p{
+        padding: 0 38px 16px 38px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+    }
+    button{
+        margin-bottom: 10px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .section1{
+        margin: 50px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        border-radius: 2rem;
+        padding: 61px 17px 61px 76px;
+    }
+    .text-part h2 {
+        margin-bottom: 1.25rem;
+        font-size: 40px;
+        line-height: 50px;
+        color: white;
+    }
+    .text-part p{
+        
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: white;
+        
+    }
+button{
+    margin-bottom: 0;
+}
+.img-part img{
+    width: 100%;
+}
+
+}
+
+/* Second Section Start */
+
+.section2{
+    margin: 0 8.75rem;
+
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.link-part{
+    height: 312px;
+    width: 312px;
+    padding: 30px;
+}
+.sations{
+    display: flex;
+    flex-direction: column;
+}
+.blogs{
+    background-color: red;
+}
+/* Second Section End */
