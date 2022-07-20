@@ -31,6 +31,7 @@ body{
     width: 100%;
 }
 .text-part h2 {
+    margin-top: 100px;
     margin-bottom: 1.25rem;
     font-size: 4.375rem;
     line-height: 5rem;
@@ -53,15 +54,11 @@ button{
     color: white;
     margin-bottom: 6.938rem;
 }
+
 .hero-btn:hover{
     background-color: white;
     color: black;
     transition: 1s ease;
-}
-
-.white-btn a{
-    text-decoration: none;
-    color: black;
 }
 /* Section one End */
 /* Mobile */
@@ -81,9 +78,11 @@ button{
         width: 70%;
     }
     .text-part h2 {
+        margin-top: 25px;
         padding: 28px 53px 8px 53px;
         text-align: center;
-        font-size: 22px;
+        font-size: 25px;
+        font-weight: 600;
         line-height: 2.063rem;
         color: white;
     }
@@ -95,8 +94,16 @@ button{
         color: white;
         text-align: center;
     }
+    .red-btn{
+        padding: 11px 20px;       
+    }
     button{
         margin-bottom: 10px;
+    }
+    .hero-btn:hover{
+        background-color: white;
+        color: black;
+        transition: 1s ease;
     }
 }
 
@@ -115,6 +122,7 @@ button{
         font-size: 40px;
         line-height: 50px;
         color: white;
+        margin-top: 0;
     }
     .text-part p{
         
@@ -129,6 +137,11 @@ button{
 }
 .img-part img{
     width: 100%;
+}
+.hero-btn:hover{
+    background-color: white;
+    color: black;
+    transition: 1s ease;
 }
 
 }
@@ -162,54 +175,50 @@ button{
     
 }
 
-/* Blog Part Start */
-.blogs{
-    background-color: re;
+/* Match Part Start */
+.matches{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
-.blog img{
-    height: 175px;
-    width: 312px;
-}
-.blog-dis{
-    padding: 15px;
-}
-.border{
-    padding: 4px 16px;
-    border-radius: 8px;
-    border: 1px solid;
-}
 
-.blog-title p{
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 600;
-    margin: 15px 0;
-}
-
-
-.blog{
+.match{
+    /* height: 242px;
+    width: 312px; */
+    padding: 53px 30px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    border-radius: 1rem;
+    border-radius: 10px;
 }
-
-
-.blog-footer{
+.match-img-part{
     display: flex;
-    color: rgba(22, 22, 22, 0.7);
+}
+.match-img-part img{
+    width: 93px;
+    height: 56px;
+}
+
+.match-img-part h2{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px;
+}
+.match-text-part{
+    width: 100%;
+    text-align: center;
+}
+
+.match-text-part h3{
     
+    font-weight: 700;
+    margin: 20px 0 10px 0;
 }
-.time{
-    margin-left: 10px;
+.match-text-part p {
+    color: black;
+    text-align: center;
 }
 
-.tablet-btn{
-    display: none;
-}
 
-/* Blog Part End */
+/* Match Part End */
 .white-btn{
     color: rgb(0, 0, 0);
     margin-bottom: 30px;
@@ -217,7 +226,7 @@ button{
     background-color: #fff;
 }
 .red-btn{
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 
@@ -228,13 +237,14 @@ button{
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
     .section2{
-        height: 100%;
-        width: 100%;
+        
+        
         margin: 0 30px 100px 30px;
     }
     .main-grid{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        
         
     }
     .sations{
@@ -251,36 +261,21 @@ button{
         border-radius: 1rem;
             
     }
-    .blogs{
-        
+    .matches{
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
     .white-btn{
         color: rgb(0, 0, 0);
-        margin: 0 30px;
+        margin: 0 30px 30px 30px;
         padding: 17px 39px;
         background-color: #fff;
         border: 1px solid;
         border-radius: 10px;
     }
-    .blog{
-        width: 316px;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-        border-radius: 1rem;
-    }
-.tabletn{
-    display: none;
-}
     
-.tablet-btn{
-    position: relative;
-    left: 170px;
-    display: block;
-    
-    text-align: center;
-}
 }
 
 /* Second Section Mobile Start */
@@ -297,12 +292,10 @@ button{
         grid-template-columns: repeat(1, 1fr);
         
     }
-    .blogs{
-        width: 315px;
-        display: grid;
+    .matches{
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
-        margin-left: 30px;
+        margin: 0 30px;
     }
 
     .link-part{
@@ -352,15 +345,18 @@ footer h3{
     padding: 50px 20px 50px 20px;
     
 }
+
 .fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin{
     margin: 20px 10px;
     font-size: 25px;
 }
+
 /* Mobile Footer  */
 
 @media only screen and (max-width: 688px){
 
     footer{
+        width: 100%;
         background-color: rgb(0, 0, 0);
         text-align: center;
         color: rgb(255, 255, 255);
@@ -384,3 +380,9 @@ footer h3{
 
 
 /* Mobile Footer  */
+/* Tablet */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    footer{
+        width: 100%;
+    }
+}
